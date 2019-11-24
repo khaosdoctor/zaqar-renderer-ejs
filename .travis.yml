@@ -1,8 +1,10 @@
+version: ~> 1.0
 os:
   - linux
 language: node_js
 node_js:
-  - node
+  - "node"
+  - "10"
 
 before_script:
   - npm i -g mocha nyc typescript
@@ -12,8 +14,6 @@ jobs:
   include:
     - stage: "Test"
       script: npm run coverage
-      on:
-        tags: false
 
     - stage: "Deploy"
       deploy:
