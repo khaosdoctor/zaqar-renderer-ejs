@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "ejs renderer for Zaqar email microservice",
   "main": "dist/index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
   "scripts": {
     "pretest": "npm run build",
     "prepare": "rm -rf dist && npm test",
