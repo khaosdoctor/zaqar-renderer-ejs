@@ -20,6 +20,7 @@ jobs:
         provider: npm
         email: $NPM_EMAIL_ADDR
         api_key: $NPM_API_KEY
+        edge: true
         skip_cleanup: true
         on:
           tags: true
