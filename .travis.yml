@@ -1,0 +1,35 @@
+os:
+  - linux
+language: node_js
+node_js:
+  - "node"
+  - "10"
+
+before_script:
+  - npm i -g mocha nyc typescript
+  - npm i
+
+jobs:
+  include:
+    - stage: "Build"
+      script: npm run build
+
+    - stage: "Test"
+      script: npm run coverage
+
+    - stage: "Deploy"
+      deploy:
+        provider: npm
+        email: $NPM_EMAIL_ADDR
+        api_key: $NPM_API_KEY
+        skip_cleanup: true
+        on:
+          tags: true
+          branch: master
+
+notifications:
+  email:
+    recipients:
+      - hello@lsantos.dev
+    on_success: change
+    on_failure: always
