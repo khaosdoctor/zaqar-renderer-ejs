@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/khaosdoctor/zaqar-renderer-ejs.svg?branch=master)](https://travis-ci.org/khaosdoctor/zaqar-renderer-ejs)
 
-EJS renderer for Zaqar email microservice
+EJS renderer for [Zaqar](https://github.com/khaosdoctor/zaqar) email microservice
 
 > **lang:** ejs
 
