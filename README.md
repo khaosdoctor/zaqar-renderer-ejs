@@ -1,4 +1,4 @@
-# E template renderer for Zaqar
+# EJS template renderer for Zaqar
 
 [![Build Status](https://travis-ci.org/khaosdoctor/zaqar-renderer-ejs.svg?branch=master)](https://travis-ci.org/khaosdoctor/zaqar-renderer-ejs)
 
