@@ -1,6 +1,6 @@
 {
   "name": "zaqar-renderer-ejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ejs renderer for Zaqar email microservice",
   "main": "dist/index.js",
   "engines": {
